@@ -10,8 +10,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_cache_manager: ^3.0.0
-  cached_network_image_platform_interface: ^2.0.0
+  flutter_cache_manager:
+    git:
+      url: https://github.com/linktohack/flutter_cache_manager.git
+      ref: develop
+      path: flutter_cache_manager
+  cached_network_image_platform_interface:
+    git:
+      url: https://github.com/linktohack/flutter_cached_network_image.git
+      ref: develop
+      path: cached_network_image_platform_interface
 
 dev_dependencies:
   flutter_test:
